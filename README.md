@@ -13,7 +13,7 @@ with and without GloVe word embeddings, and Recurrent Neural Networks (RNNs) wit
 
 The dataset contain the flow labels:
 
-![](C:\Users\97254\Documents\MyProjects\Emotion_classification\data\dataset.png)
+<img height="300" src="data\dataset.png" width="400"/>
 
 [You can find the dataset here](https://www.kaggle.com/datasets/praveengovi/emotions-dataset-for-nlp).
 
@@ -23,30 +23,19 @@ The project notebook is structured as follows:
 1) Data Processing and Analysis (EDA)
 2) ComplementNB Model
 
-![](C:\Users\97254\Documents\MyProjects\Emotion_classification\models_data\ml.png)
+<img height="200" src="models_data\ml.png" width="500"/>
 
 3) CNN Model with GloVe Features
 
-![](C:\Users\97254\Documents\MyProjects\Emotion_classification\models_data\cnn_g.png)
+<img height="500" src="models_data\cnn_g.png" width="700"/>
 
 4) CNN Model without GloVe Features
 
-![](C:\Users\97254\Documents\MyProjects\Emotion_classification\models_data\cnn.png)
+<img height="500" src="models_data\cnn.png" width="700"/>
 
 5) RNN (LSTM) Model with GloVe Features
 
-![](C:\Users\97254\Documents\MyProjects\Emotion_classification\models_data\rnn_g.png)
-
-
-## **Trained Models**:
-The trained models used in this project are saved. you can load them as follows:
-
-| Model                          | Loading Function        | Returns                     | Make Predictions             |
-|--------------------------------|-------------------------|-----------------------------|------------------------------|
-| ComplementNB                   | ml.load_model()         | pipeline (sklearn)          | pipeline.predict(x)          |
-| CNN with GloVe features        | net.load_model('cnn_g') | (model, vectorizer) (keras) | model.predict(vectorizer(x)) |
-| CNN without GloVe features     | net.load_model('cnn')   | (model, vectorizer) (keras) | model.predict(vectorizer(x)) |
-| RNN (LTSM) with GloVe features | net.load_model('rnn_g') | (model, vectorizer) (keras) | model.predict(vectorizer(x)) |
+<img height="500" src="models_data\rnn_g.png" width="400"/>
 
 ## **Results**:
 
@@ -58,6 +47,18 @@ The mean accuracy results for the training data are as follows:
 | CNN - GloVe  | 0.85     |
 | CNN          | 0.91     |
 | RNN - GloVe  | 0.92     |
+
+
+
+## **Trained Models**:
+The trained models used in this project are saved. you can load them as follows:
+
+| Model                          | Loading Function        | Returns                     | Make Predictions             |
+|--------------------------------|-------------------------|-----------------------------|------------------------------|
+| ComplementNB                   | ml.load_model()         | pipeline (sklearn)          | pipeline.predict(x)          |
+| CNN with GloVe features        | net.load_model('cnn_g') | (model, vectorizer) (keras) | model.predict(vectorizer(x)) |
+| CNN without GloVe features     | net.load_model('cnn')   | (model, vectorizer) (keras) | model.predict(vectorizer(x)) |
+| RNN (LTSM) with GloVe features | net.load_model('rnn_g') | (model, vectorizer) (keras) | model.predict(vectorizer(x)) |
 
 
 
